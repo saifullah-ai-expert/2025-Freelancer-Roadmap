@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025 Freelancer Roadmap - Make it Pop!</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap'); /* Switched to Poppins for a modern, clean look */
+
+        :root {
+            --primary-color: #1E88E5; /* Slightly brighter blue */
+            --secondary-color: #FFB300; /* Richer amber/gold */
+            --accent-color: #4DD0E1; /* Added a cyan accent */
+            --text-color: #263238; /* Darker grey for better contrast */
+            --light-bg: #f7f9fc; /* Slightly cooler light background */
+            --white: #ffffff;
+            --border-color: #e0e0e0;
+            --success-color: #4CAF50; /* Standard green */
+            --warning-color: #F44336; /* Standard red */
+            --highlight-bg: rgba(255, 179, 0, 0.25); /* More noticeable highlight */
+            --gradient-primary: linear-gradient(135deg, #1E88E5 0%, #42A5F5 100%);
+            --gradient-secondary: linear-gradient(135deg, #FFB300 0%, #FFCA28 100%);
+            --gradient-accent: linear-gradient(135deg, #4DD0E1 0%, #80DEEA 100%);
+            --gradient-step: linear-gradient(135deg, #4caf50 0%, #81c784 100%); /* Greenish gradient for steps */
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif; /* Using Poppins */
+            line-height: 1.7;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-bg);
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 950px; /* Slightly wider */
+            margin: 40px auto; /* More margin top/bottom */
+            padding: 30px; /* More padding */
+            background-color: var(--white);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Softer, larger shadow */
+            border-radius: 12px; /* More rounded corners */
+            border-top: 5px solid var(--primary-color); /* Added top border accent */
+        }
+
+        h1, h2, h3 {
+            font-weight: 700; /* Bold */
+            color: var(--primary-color);
+            margin-bottom: 0.6em;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3em; /* Larger */
+            margin-bottom: 1em;
+            color: #1A237E; /* Darker Indigo for Title */
+            padding-bottom: 15px;
+             text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+             /* Removed border, using color and shadow instead */
+        }
+
+        h2 {
+            font-size: 2.2em;
+            margin-top: 2em; /* More space above sections */
+            border-left: 6px solid var(--secondary-color); /* Thicker accent border */
+            padding-left: 15px;
+            color: #0D47A1; /* Darker Blue */
+        }
+
+        h3 {
+            font-size: 1.6em;
+            color: #37474F; /* Dark Slate Gray */
+            margin-top: 1.8em;
+        }
+
+        h4 {
+            font-size: 1.25em;
+            color: var(--primary-color);
+            font-weight: 600; /* Semi-bold */
+        }
+
+        p, li {
+            font-size: 1.08em; /* Slightly larger base font */
+            margin-bottom: 1.1em;
+            color: #455A64; /* Slightly lighter than main text color */
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600; /* Semi-bold links */
+            transition: color 0.3s ease, border-bottom 0.3s ease;
+            border-bottom: 2px dotted var(--accent-color); /* Use accent color for dotted line */
+        }
+
+        a:hover {
+            color: #1565C0; /* Darker blue on hover */
+            border-bottom: 2px solid #1565C0; /* Solid line on hover */
+        }
+
+        .intro-text {
+            font-style: normal; /* Removed italic */
+            text-align: center;
+            margin-bottom: 2.5em;
+            color: #546E7A;
+            padding: 20px 25px;
+            background-color: #E3F2FD; /* Lighter blue background */
+            border-radius: 8px;
+            border-left: 6px solid var(--primary-color);
+            font-size: 1.1em;
+        }
+
+        .step-section {
+            background-color: #fff; /* Keep steps clean */
+            padding: 30px;
+            margin-bottom: 35px;
+            border-radius: 10px;
+            border: 1px solid #e8eaf6; /* Lighter border */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .step-section:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+        }
+
+
+        .step-section h2 span.emoji {
+            margin-right: 12px;
+            font-size: 1.2em;
+            display: inline-block;
+            transform: translateY(3px);
+            filter: grayscale(30%); /* Slightly desaturate emoji */
+            transition: filter 0.3s ease;
+        }
+        .step-section:hover h2 span.emoji {
+             filter: grayscale(0%); /* Full color on hover */
+        }
+
+        .highlight {
+            background-color: var(--highlight-bg);
+            padding: 0.2em 0.4em;
+            border-radius: 4px;
+            font-weight: 600; /* Semi-bold highlight */
+            color: #5f4300; /* Darker text on highlight */
+        }
+
+        .example {
+            font-style: normal; /* Removed italic */
+            color: #455A64;
+            border-left: 4px solid var(--accent-color); /* Accent color border */
+            padding: 15px 20px;
+            margin-top: 15px;
+            margin-bottom: 20px;
+            background-color: #f1f8f9; /* Lighter cyan background */
+            border-radius: 0 8px 8px 0;
+            font-size: 0.95em;
+        }
+         .example strong {
+             color: var(--text-color);
+             font-weight: 600;
+         }
+
+        .program-section {
+            background: linear-gradient(to bottom, #e1f5fe, #ffffff); /* Subtle gradient background */
+            padding: 30px;
+            margin-top: 40px;
+            border-radius: 10px;
+            border: 1px solid #b3e5fc;
+        }
+
+        .program {
+            margin-bottom: 30px;
+            padding-bottom: 25px;
+            border-bottom: 1px dashed var(--border-color);
+        }
+        .program:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .program ul { list-style: none; padding-left: 5px; }
+        .program li { margin-bottom: 0.8em; position: relative; padding-left: 30px; font-size: 1.02em; }
+        .program li::before {
+            content: '✅';
+            position: absolute;
+            left: 0;
+            top: 1px;
+            font-size: 1.1em; /* Slightly larger checkmark */
+            color: var(--success-color);
+        }
+
+        .summary-section {
+            margin-top: 50px;
+            padding: 30px;
+            border: none; /* Removed border */
+            border-radius: 10px;
+            background-color: #eceff1; /* Light grey background */
+        }
+
+        .summary-section h2 {
+            text-align: center;
+            border-left: none;
+            padding-left: 0;
+            border-bottom: 3px solid var(--secondary-color); /* Accent color */
+            display: inline-block;
+            color: var(--text-color); /* Use main text color */
+            margin-bottom: 25px;
+        }
+
+        .summary-columns {
+            display: flex;
+            justify-content: space-around;
+            gap: 25px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+
+        .summary-col {
+            flex: 1;
+            min-width: 280px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.07);
+        }
+
+        .summary-col.do {
+            background-color: #E8F5E9; /* Keep light green */
+            border-bottom: 5px solid var(--success-color); /* Bottom border accent */
+        }
+
+        .summary-col.dont {
+            background-color: #FFEBEE; /* Keep light red */
+            border-bottom: 5px solid var(--warning-color); /* Bottom border accent */
+        }
+
+        .summary-col h3 {
+            margin-top: 0;
+            color: var(--text-color);
+            font-weight: 600;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .summary-col ul { list-style: none; padding-left: 0; }
+        .summary-col li { margin-bottom: 12px; position: relative; padding-left: 30px; }
+        .summary-col.do li::before { content: '👍'; position: absolute; left: 0; font-size: 1.2em; top: -1px; }
+        .summary-col.dont li::before { content: '👎'; position: absolute; left: 0; font-size: 1.2em; top: -1px; }
+
+        .cta-section {
+            text-align: center;
+            margin-top: 50px;
+            padding: 35px 25px;
+            background: var(--gradient-primary); /* Use gradient */
+            color: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(30, 136, 229, 0.4); /* Shadow matching primary color */
+        }
+
+        .cta-section h3 {
+            color: var(--white);
+            margin-top: 0;
+            font-size: 1.8em;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+
+        .cta-section p { font-size: 1.15em; color: #e3f2fd; /* Lighter text on dark background */ }
+        .cta-section a {
+            color: var(--secondary-color); /* Use secondary color for link */
+            font-weight: bold;
+            border-bottom: 2px dotted var(--secondary-color);
+        }
+        .cta-section a:hover { color: #fff; border-bottom: 2px solid #fff; }
+
+        .final-thought {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 1.3em;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        /* --- Mind Map Styles - Enhanced --- */
+        .mindmap-section {
+            margin-top: 60px;
+            text-align: center;
+            padding: 40px 0;
+            background-color: #f0f4f8; /* Light background for contrast */
+            border-radius: 10px;
+        }
+
+        .mindmap-section h2 {
+            color: var(--text-color);
+            border-bottom: 3px solid var(--accent-color); /* Accent color line */
+            display: inline-block;
+             margin-bottom: 40px; /* More space below title */
+        }
+
+        .mindmap {
+            position: relative;
+            min-height: 450px; /* Increased height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 0;
+            overflow: visible; /* Allow shadows to show */
+        }
+
+        .mindmap-node {
+            position: absolute;
+            color: var(--white); /* White text for contrast on gradient */
+            padding: 18px 30px; /* Larger padding */
+            border-radius: 50px; /* Keep oval shape */
+            font-weight: 600; /* Semi-bold text */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); /* Stronger shadow */
+            z-index: 2;
+            white-space: nowrap;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3); /* Shadow for readability */
+            border: 2px solid rgba(255,255,255,0.3); /* Subtle border */
+        }
+        .mindmap-node:hover {
+            transform: translate(-50%, -50%) scale(1.05); /* Scale up on hover */
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+        }
+
+        .mindmap-node.center {
+            background: var(--gradient-secondary); /* Use secondary gradient */
+            color: var(--text-color); /* Dark text on yellow */
+            font-size: 1.3em;
+            padding: 22px 35px;
+            font-weight: 700; /* Bolder center */
+            text-shadow: none; /* Remove shadow if text is dark */
+            border-color: rgba(0,0,0,0.1);
+        }
+
+        /* Assign different gradients to steps */
+        .mindmap-node.step1 { background: var(--gradient-primary); }
+        .mindmap-node.step2 { background: var(--gradient-accent); color: var(--text-color); text-shadow: none; border-color: rgba(0,0,0,0.1); } /* Cyan */
+        .mindmap-node.step3 { background: linear-gradient(135deg, #ef5350 0%, #e57373 100%); } /* Reddish */
+        .mindmap-node.step4 { background: linear-gradient(135deg, #66BB6A 0%, #81C784 100%); } /* Greenish */
+        .mindmap-node.step5 { background: linear-gradient(135deg, #7E57C2 0%, #9575CD 100%); } /* Purplish */
+
+
+        /* Positioning - Adjusted slightly for new size/layout */
+        .mindmap-node.center { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+        .mindmap-node.step1 { top: 10%; left: 50%; transform: translate(-50%, -50%); }
+        .mindmap-node.step2 { top: 35%; left: 80%; transform: translate(-50%, -50%); }
+        .mindmap-node.step3 { top: 75%; left: 70%; transform: translate(-50%, -50%); }
+        .mindmap-node.step4 { top: 75%; left: 30%; transform: translate(-50%, -50%); }
+        .mindmap-node.step5 { top: 35%; left: 20%; transform: translate(-50%, -50%); }
+
+        /* Lines */
+        .mindmap-line {
+            position: absolute;
+            background-color: #90a4ae; /* Muted grey for lines */
+            height: 3px;
+            z-index: 1;
+            transform-origin: left center;
+            border-radius: 2px;
+            opacity: 0.8; /* Slightly transparent */
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 992px) { /* Adjust breakpoint */
+             .mindmap-node.step2 { top: 30%; left: 85%; }
+             .mindmap-node.step3 { top: 80%; left: 75%; }
+             .mindmap-node.step4 { top: 80%; left: 25%; }
+             .mindmap-node.step5 { top: 30%; left: 15%; }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 20px;
+                border-top-width: 4px;
+            }
+            h1 { font-size: 2.4em; }
+            h2 { font-size: 1.8em; }
+            .summary-columns { flex-direction: column; gap: 20px;}
+
+            /* Stack Mindmap more vertically */
+            .mindmap { min-height: 650px; padding: 20px 0;}
+            .mindmap-node { font-size: 0.95em; padding: 12px 20px; }
+            .mindmap-node.center { font-size: 1.1em; padding: 15px 25px; }
+
+            .mindmap-node.center { top: 50%; left: 50%; }
+            .mindmap-node.step1 { top: 10%; left: 50%; }
+            .mindmap-node.step2 { top: 30%; left: 50%; transform: translate(-50%, -50%) translateX(100px); } /* Offset horizontally */
+            .mindmap-node.step3 { top: 70%; left: 50%; transform: translate(-50%, -50%) translateX(100px); }
+            .mindmap-node.step4 { top: 70%; left: 50%; transform: translate(-50%, -50%) translateX(-100px); }
+            .mindmap-node.step5 { top: 30%; left: 50%; transform: translate(-50%, -50%) translateX(-100px); }
+        }
+
+         @media (max-width: 576px) { /* Smaller Mobiles */
+             body { font-size: 15px; }
+             h1 { font-size: 2em; }
+             h2 { font-size: 1.6em; }
+             .container { margin: 10px; padding: 15px; }
+             .step-section { padding: 20px; }
+             .summary-col { min-width: 100%; } /* Full width summary cols */
+
+             .mindmap { min-height: 700px; }
+             .mindmap-node { padding: 10px 15px; white-space: normal; text-align: center; border-radius: 15px; } /* Allow text wrap */
+             .mindmap-node.center { padding: 12px 20px; }
+
+             /* Adjust offsets for wrapping nodes */
+             .mindmap-node.step2 { transform: translate(-50%, -50%) translateX(80px); }
+             .mindmap-node.step3 { transform: translate(-50%, -50%) translateX(80px); }
+             .mindmap-node.step4 { transform: translate(-50%, -50%) translateX(-80px); }
+             .mindmap-node.step5 { transform: translate(-50%, -50%) translateX(-80px); }
+         }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🚀 2025 Freelancer Roadmap 🗺️</h1>
+
+        <p class="intro-text">
+            Hey there! Thanks for checking this out. Freelancing can feel like a rollercoaster 🎢, but with the right map and mindset, you can totally nail it and find that sweet spot of freedom and finance. Let's get you on the path to success!
+        </p>
+
+        <!-- Step 1 -->
+        <section class="step-section" id="step1">
+            <h2><span class="emoji">🎯</span> Step 1: Set Clear Goals and Priorities</h2>
+            <p>First things first: know where you're heading! Define what success looks like for *you*. Is it a specific income goal? Working on cool passion projects? Getting clients in a particular industry?</p>
+            <p>Once you know your 'why' and 'what', <span class="highlight">prioritize tasks and clients</span> that actually help you get there. This keeps you focused and stops you from chasing every shiny object.</p>
+            <div class="example">
+                <strong>Example:</strong> A freelance graphic designer aims for $5,000/month. They decide to focus on tech startups 💻 to build a specialized portfolio. They'll prioritize outreach and projects within that niche.
+            </div>
+            <p>Finding your <span class="highlight">niche</span> is like shifting from a stroll to a sprint 🏃‍♀️. When you know your destination, you set the pace. Check out how focused <a href="https://100xelevate.com" target="_blank" rel="noopener noreferrer">100x Elevate</a> is!</p>
+            <p>Still fuzzy on niches? I dive deep into this in my YouTube recording (grab some popcorn 🍿, it's packed with info!):<br>
+            <a href="https://www.youtube.com/live/F2X3NXEnd_A" target="_blank" rel="noopener noreferrer">Watch Niche Selection Deep Dive</a>
+            </p>
+        </section>
+
+        <!-- Step 2 -->
+        <section class="step-section" id="step2">
+            <h2><span class="emoji">📢</span> Step 2: Market Yourself Effectively</h2>
+            <p>You've got the skills, now let the world know! Use platforms like <span class="highlight">LinkedIn</span> and <span class="highlight">Upwork</span> strategically. Don't just exist there – showcase your awesomeness!</p>
+            <p>Build a professional website (even a simple one!) and keep your social media profiles polished ✨. Tools like <span class="highlight">Canva</span> are great for making eye-catching graphics without being a design pro.</p>
+             <p>Trust me, these platforms work! I personally earned <span class="highlight">$600K+ via Upwork</span> and get tons of leads from LinkedIn. Consistency is key!</p>
+             <div class="example">
+                <strong>My Profile Example:</strong> Check out my Expert-Vetted Upwork profile. Notice how I started small ($10/hr!) and built up, showcasing clear milestones. This makes it easy for clients to see the value. <br>
+                <a href="https://www.upwork.com/freelancers/raheem" target="_blank" rel="noopener noreferrer">My Upwork Profile</a>
+            </div>
+            <p>Want the inside scoop on optimizing your Upwork game? I cover a LOT in this session:<br>
+             <a href="https://www.youtube.com/live/F2X3NXEnd_A?si=tn3XNZg27M9g_Mco" target="_blank" rel="noopener noreferrer">Watch Upwork Optimization Session</a>
+            </p>
+        </section>
+
+        <!-- Step 3 -->
+        <section class="step-section" id="step3">
+             <h2><span class="emoji">💼</span> Step 3: Build a Strong Portfolio</h2>
+             <p>Your portfolio is your proof! It's where potential clients see what you can *do*. Showcase your absolute best work here.</p>
+             <p>The classic freelancer dilemma: "Need portfolio for clients, need clients for portfolio." 🤔 Get creative! <span class="highlight">Offer free or heavily discounted work</span> initially *specifically* to build killer case studies. Think of it as an investment.</p>
+             <div class="example">
+                <strong>Example:</strong> Digital marketer? Run an ad campaign *for yourself* or a non-profit. Document the process and results – BAM! Portfolio piece.
+            </div>
+            <p>Don't get stuck waiting. <span class="highlight">Focus on doing the work</span>, even if unpaid at first, until that portfolio shines. Designers, check out Behance/Dribble. Developers, GitHub is your friend!</p>
+            <p>Here's my GitHub for inspiration if you're a dev:<br>
+            <a href="https://github.com/raheemdawar" target="_blank" rel="noopener noreferrer">My GitHub Profile</a>
+            </p>
+        </section>
+
+        <!-- Step 4 -->
+        <section class="step-section" id="step4">
+            <h2><span class="emoji">✨</span> Step 4: Deliver High-Quality Work & Communicate Well</h2>
+            <p>This is non-negotiable. Always, always <span class="highlight">deliver work you're proud of</span>. Quality builds trust, and trust leads to repeat business and bigger opportunities.</p>
+            <div class="example">
+                <strong>Real Story:</strong> I turned a $500 project into <span class="highlight">$200K+</span> with the *same client* simply by delivering great results and communicating clearly every step of the way. See the proof: <br>
+                <a href="https://www.linkedin.com/posts/raheemdawar_freelancer-upwork-tech-activity-7227279074782547968-GIFY?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">LinkedIn Post about $200K Project</a>
+            </div>
+            <p>In remote work, <span class="highlight">communication is EVERYTHING</span>. Be clear, be proactive. Pro Tip: Send short video recordings (using tools like Loom) to explain complex things or address concerns. It cuts through confusion, especially across language barriers.</p>
+            <p>Mastering communication is crucial. Check out my post on the do's and don'ts:<br>
+            <a href="https://www.linkedin.com/posts/raheemdawar_communicate-like-a-pro-activity-7196094438962561024-TS5e?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">Communication Tips Post</a>
+            </p>
+            <p><strong>Recommended Tools:</strong> <span class="highlight">Slack</span> for team/client chat, <span class="highlight">Google Drive</span> for sharing files easily. Discover more tools I use:<br>
+            <a href="https://youtu.be/YSULNgnDvpU?si=CMBebpR8WmG44Ow0" target="_blank" rel="noopener noreferrer">Watch Top Business Development Tools Video</a>
+            </p>
+        </section>
+
+        <!-- Step 5 -->
+        <section class="step-section" id="step5">
+            <h2><span class="emoji">💡</span> Step 5: Invest in Continuous Learning</h2>
+            <p>The freelance world moves fast! 💨 What worked yesterday might be outdated tomorrow. <span class="highlight">Never stop learning</span>. Master new tools, stay updated on industry trends, and refine your skills.</p>
+            <p>Stats show freelancers who keep learning get <span class="highlight">40% more repeat business</span> on Upwork! Platforms like Upwork constantly evolve (profile boosting, direct contracts, etc.). Staying informed keeps you competitive.</p>
+            <p>You need to adapt to market trends and platform changes to thrive. Keep that curiosity alive! 🌱</p>
+        </section>
+
+        <!-- Programs Section -->
+        <section class="program-section" id="programs">
+            <h2>🎓 Our Programs (Level Up Your Freelancing!)</h2>
+            <p style="text-align: center; font-size: 1.1em; color: #37474F;">We've helped tons of freelancers succeed (nearly 90% success rate!) with our focused programs:</p>
+
+            <div class="program">
+                <h3>Cohort 12 Weeks Program</h3>
+                <p>A 3-month intensive business development journey directly with me (Raheem Dawar). Get hands-on training to become independent or even grow your own agency.</p>
+                <p>We cover Upwork mastery, plus powerful outreach/management tools: Email Marketing, LinkedIn Sales Navigator, Apollo, CRMs, Clutch, Clay, and more!</p>
+                <ul>
+                    <li>1-1 call with Raheem for profile review</li>
+                    <li>Weekly group Zoom calls with Raheem</li>
+                    <li>The $1000 earning challenge</li>
+                    <li>24/7 community support</li>
+                </ul>
+                <p style="text-align: center; margin-top: 20px;"><a href="https://www.raheemdawar.com/offering/learn-from-us" target="_blank" rel="noopener noreferrer" style="background-color: var(--primary-color); color: white; padding: 10px 20px; border-radius: 25px; border-bottom: none; display: inline-block; box-shadow: 0 3px 8px rgba(0,0,0,0.1);">Learn More & Join Cohort</a></p>
+            </div>
+
+             <div class="program">
+                <h3>1-1 CEO Mentorship Program</h3>
+                <p>Get personalized, step-by-step guidance from our experts covering the *entire* process: from email marketing and profile optimization to closing deals and client delivery.</p>
+                 <p>We'll work closely via Slack (24/7 availability) with me overseeing every step.</p>
+                <ul>
+                    <li>Dedicated 1-on-1 Zoom calls with experts</li>
+                    <li>24-Hour direct support via Slack</li>
+                    <li>Raheem reviews everything personally</li>
+                 </ul>
+                 <p style="text-align: center; margin-top: 20px;"><a href="https://www.raheemdawar.com/offering/hire-us-to-do-it-for-you" target="_blank" rel="noopener noreferrer" style="background-color: var(--secondary-color); color: var(--text-color); padding: 10px 20px; border-radius: 25px; border-bottom: none; display: inline-block; box-shadow: 0 3px 8px rgba(0,0,0,0.1);">Explore 1-1 Mentorship</a></p>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+         <section class="cta-section" id="next-steps">
+            <h3>Ready to Take the Leap? 🤔 Let's Chat!</h3>
+            <p>Got questions about the Cohort or 1-1 Mentorship? Our support team is ready to help!</p>
+            <p>Reach out via WhatsApp: <a href="https://wa.me/923069177064" target="_blank" rel="noopener noreferrer">+92 306 9177064</a></p>
+            <p>Know other freelancers? Share this roadmap with them! Let's all succeed together. 🙌</p>
+        </section>
+
+        <!-- Summary Section -->
+        <section class="summary-section" id="summary">
+            <center><h2>Quick Summary: Do's & Don'ts</h2></center>
+            <div class="summary-columns">
+                <div class="summary-col do">
+                    <h3>👍 DO THIS:</h3>
+                    <ul>
+                        <li>Set clear, specific goals (income, niche).</li>
+                        <li>Actively market yourself (LinkedIn, Upwork).</li>
+                        <li>Build a portfolio (even with free starter projects).</li>
+                        <li>Focus on high-quality delivery.</li>
+                        <li>Communicate clearly & proactively (use video!).</li>
+                        <li>Embrace continuous learning & adapt.</li>
+                        <li>Niche down to become an expert.</li>
+                    </ul>
+                </div>
+                <div class="summary-col dont">
+                     <h3>👎 AVOID THIS:</h3>
+                     <ul>
+                        <li>Working without clear goals or focus.</li>
+                        <li>Hoping clients will magically find you.</li>
+                        <li>Waiting forever for the "perfect" paid project for your portfolio.</li>
+                        <li>Delivering mediocre work.</li>
+                        <li>Being unclear or slow in communication.</li>
+                        <li>Letting your skills get stale.</li>
+                        <li>Trying to be everything to everyone.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mind Map Section -->
+        <section class="mindmap-section" id="mindmap">
+             <h2>🗺️ Freelancer Roadmap Mind Map</h2>
+             <div class="mindmap">
+                <div class="mindmap-node center">Freelancer Success 2025</div>
+
+                <div class="mindmap-node step step1">🎯 Goals & Priorities</div>
+                <div class="mindmap-node step step2">📢 Effective Marketing</div>
+                <div class="mindmap-node step step3">💼 Strong Portfolio</div>
+                <div class="mindmap-node step step4">✨ Quality & Comms</div>
+                <div class="mindmap-node step step5">💡 Continuous Learning</div>
+
+                <!-- Lines - Drawn by JS -->
+                <div class="mindmap-line line1"></div>
+                <div class="mindmap-line line2"></div>
+                <div class="mindmap-line line3"></div>
+                <div class="mindmap-line line4"></div>
+                <div class="mindmap-line line5"></div>
+             </div>
+        </section>
+
+
+        <p class="final-thought">May your bank account get flooded with dollars... for real! 💸 Good luck!</p>
+
+    </div>
+
+    <script>
+        // Simple function to draw basic lines for the mind map using CSS transforms.
+        function drawMindMapLines() {
+            const centerNode = document.querySelector('.mindmap-node.center');
+            const steps = document.querySelectorAll('.mindmap-node.step');
+            const lines = document.querySelectorAll('.mindmap-line');
+            const mindmapContainer = document.querySelector('.mindmap');
+
+            if (!centerNode || steps.length === 0 || lines.length < steps.length || !mindmapContainer) return;
+
+            // Get coordinates relative to the mindmap container
+            const containerRect = mindmapContainer.getBoundingClientRect();
+            const center = {
+                x: centerNode.offsetLeft + centerNode.offsetWidth / 2,
+                y: centerNode.offsetTop + centerNode.offsetHeight / 2
+            };
+
+            steps.forEach((step, index) => {
+                if (lines[index]) {
+                    const stepCenter = {
+                        x: step.offsetLeft + step.offsetWidth / 2,
+                        y: step.offsetTop + step.offsetHeight / 2
+                    };
+
+                    const deltaX = stepCenter.x - center.x;
+                    const deltaY = stepCenter.y - center.y;
+                    const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+                    const angle = Math.atan2(deltaY, deltaX) * (180 / Math.PI); // Angle in degrees
+
+                    const line = lines[index];
+                    line.style.width = `${distance}px`;
+                    line.style.left = `${center.x}px`;
+                    line.style.top = `${center.y - 1.5}px`; // Center the line height (3px / 2)
+                    line.style.transform = `rotate(${angle}deg)`;
+                }
+            });
+        }
+
+        // Draw lines on load and resize
+        window.addEventListener('load', drawMindMapLines);
+        window.addEventListener('resize', drawMindMapLines);
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                try { // Add error handling for potentially invalid selectors
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                } catch (error) {
+                    console.error("Error finding element for scroll:", targetId, error);
+                }
+            });
+        });
+
+    </script>
+
+</body>
+</html>
